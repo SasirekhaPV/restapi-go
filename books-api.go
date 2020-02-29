@@ -46,7 +46,7 @@ func addBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func getBook(w http.ResponseWriter, r *http.Request) {
-	// get the ID of the post from the route parameter
+	// get the ID of the book from the route parameter
 	var idParam string = mux.Vars(r)["id"]
 	id, err := strconv.Atoi(idParam)
 	if err != nil {
